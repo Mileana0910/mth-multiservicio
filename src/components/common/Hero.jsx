@@ -37,11 +37,11 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-2xl md:text-3xl lg:text-4xl font-black text-white leading-tight text-balance"
             >
-              Soluciones{' '}
-              <span className="text-yellow-400">confiables</span>,{' '}
-              <span className="text-white">rápidas</span> y{' '}
-              <span className="text-yellow-400">garantizadas</span>{' '}
-              para tu hogar
+              Tu técnico de {' '}
+              <span className="text-yellow-400">confianza</span>,{' '}
+              <span className="text-white">donde lo </span>{' '}
+              <span className="text-yellow-400">necesites</span> y cuando lo{' '}
+              <span className="text-yellow-400">necesites.</span>
             </motion.h1>
 
             <motion.div

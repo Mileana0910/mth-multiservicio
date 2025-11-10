@@ -75,8 +75,7 @@ export function ServicesSection() {
           </div>
           
           <h2 className="text-2xl md:text-3xl font-black text-gray-800 mb-4">
-            Soluciones <span className="text-brand-orange-500">integrales</span> para tu hogar
-          </h2>
+            Soluciones que transforman <span className="text-brand-orange-500">hogares, personas y comunidades.</span> </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-3xl mx-auto mb-6">
             <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg border border-gray-200 shadow-sm">
