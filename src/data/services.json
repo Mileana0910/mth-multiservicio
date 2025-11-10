@@ -1,0 +1,114 @@
+{
+  "services": [
+    {
+      "avatar": "/images/avatarPlomero.jpeg",
+      "title": "Plomería",
+      "description": "Reparaciones, detección de fugas, instalación de griferías y lavado de tanques.",
+      "features": ["Reparaciones y reemplazos", "Detección precisa de fugas", "Instalación de accesorios", "Lavado de tanques"],
+      "details": [
+        "Reparamos tuberías de alta, media y baja presión en materiales PVC, CPVC, PE-AL-PE, galvanizado y sanitario",
+        "Usamos herramientas como geófonos, cámaras endoscópicas y pruebas químicas para ubicar fugas sin romper de más",
+        "Reemplazamos o instalamos griferías, lavamanos, sanitarios y duchas con acabados profesionales",
+        "Servicio certificado para lavado y desinfección de tanques de agua potable aéreos o subterráneos",
+        "Respaldo y garantía en cada trabajo con profesionales de confianza y resultados duraderos"
+      ],
+      "icon": "💦",
+      "color": "blue"
+    },
+    {
+      "avatar": "/images/avatarElectricista.jpeg",
+      "title": "Electricidad Residencial",
+      "description": "Reparaciones seguras, instalaciones y pruebas eléctricas certificadas.",
+      "features": ["Reparaciones seguras", "Instalaciones profesionales", "Pruebas certificadas", "Electricistas calificados"],
+      "details": [
+        "Solucionamos cortocircuitos, sobrecargas y fallas por calentamiento de terminales, garantizando la seguridad de tu instalación eléctrica",
+        "Realizamos cambio de tomas, interruptores, breakers, duchas eléctricas, lámparas empotradas o de sobreponer con acabados profesionales",
+        "Verificamos tu red para detectar pérdidas de corriente o fallas a tierra que puedan generar sobrecostos en tu factura",
+        "Electricistas certificados que te brindan seguridad, eficiencia y garantía en cada servicio",
+        "Trabajamos con los más altos estándares de seguridad eléctrica para proteger tu hogar"
+      ],
+      "icon": "⚡",
+      "color": "yellow"
+    },
+    {
+      "avatar": "/images/avatarDestapeTuberia.jpeg",
+      "title": "Destape de Tuberías",
+      "description": "Tecnología avanzada para eliminar obstrucciones y malos olores.",
+      "features": ["Tecnología especializada", "Diagnóstico preciso", "Sin tapones ni olores", "Trabajo garantizado"],
+      "details": [
+        "Contamos con sondas eléctricas, manuales y pistolas de presurización para eliminar cualquier tipo de obstrucción",
+        "Elegimos el método adecuado según el tipo de taponamiento, asegurando un trabajo rápido, limpio y garantizado",
+        "Recupera el flujo normal en tus tuberías y disfruta de un hogar funcional y libre de molestias",
+        "Eliminamos malos olores definitivamente con técnicas profesionales y productos especializados",
+        "Servicio confiable y con garantía, profesionales listos para atenderte cuando más lo necesites"
+      ],
+      "icon": "🚰",
+      "color": "green"
+    },
+    {
+      "avatar": "/images/avatarImpermeabilizacion.jpeg",
+      "title": "Impermeabilización",
+      "description": "Soluciones duraderas contra filtraciones y humedades.",
+      "features": ["Mantos asfálticos", "Aislamiento térmico", "Eliminación de humedades", "Soluciones integrales"],
+      "details": [
+        "Corregimos desniveles en planchas o canales con materiales impermeabilizantes de alta calidad",
+        "Colocamos mantos asfálticos, techos y bajantes en distintos tipos de material para máxima durabilidad",
+        "Instalamos materiales aislantes térmicos y acústicos para mejorar el confort de tu hogar",
+        "Reparamos muros afectados por filtraciones o niveles freáticos altos con técnicas especializadas",
+        "Solución garantizada y duradera contra humedades, protegiendo la estructura de tu vivienda"
+      ],
+      "icon": "🛡️",
+      "color": "purple"
+    },
+    {
+      "avatar": "/images/avatarPintor.jpeg",
+      "title": "Pintura",
+      "description": "Transforma tus espacios con acabados de calidad profesional.",
+      "features": ["Técnicas especializadas", "Materiales de calidad", "Acabados impecables", "Asesoría profesional"],
+      "details": [
+        "Renueva tu hogar o negocio con acabados de calidad y asesoría profesional personalizada",
+        "Trabajamos con pinturas a base agua, aceite o epóxicas, seleccionando la mejor opción para tu proyecto",
+        "Seleccionamos la pintura que mejor se ajuste a tu proyecto y presupuesto, garantizando durabilidad",
+        "Logra acabados impecables y duraderos con el respaldo de un equipo experto en aplicaciones profesionales",
+        "Transformamos tus espacios con colores y técnicas que realzan la belleza y protección de tus superficies"
+      ],
+      "icon": "🎨",
+      "color": "pink"
+    },
+    {
+      "avatar": "/images/avatarReparacionesGenerales.jpeg",
+      "title": "Mantenimiento General",
+      "description": "Soluciones integrales para tu hogar o negocio.",
+      "features": ["Mantenimiento preventivo", "Atención rápida", "Trabajo garantizado", "Soluciones integrales"],
+      "details": [
+        "Realizamos reparaciones, ajustes y mantenimiento preventivo en instalaciones de plomería, electricidad y estructuras menores",
+        "Atención rápida y profesional para resolver daños, filtraciones, ajustes de griferías o arreglos eléctricos menores",
+        "Evita imprevistos y gastos mayores con nuestro servicio de mantenimiento periódico y detección temprana de fallas",
+        "Detectamos y corregimos fallas a tiempo, prolongando la vida útil de tus instalaciones y equipos",
+        "Trabajo garantizado, limpio y seguro con profesionales confiables que cuidan tu espacio como si fuera el suyo"
+      ],
+      "icon": "🔧",
+      "color": "orange"
+    }
+  ],
+  "specialServices": [
+    {
+      "avatar": "/images/avatarVisitasDiagnostico.jpeg",
+      "title": "Visitas y Diagnósticos",
+      "description": "Soluciones rápidas y efectivas con cotizaciones claras y sin sorpresas.",
+      "features": ["Diagnóstico profesional", "Cotizaciones transparentes", "Ahorro garantizado", "Técnicos especializados"],
+      "details": [
+        "Nuestros técnicos combinan experiencia y tecnología para detectar y resolver tus problemas con precisión",
+        "Conoce los costos y tiempos exactos antes de iniciar tu servicio, sin sorpresas ni costos ocultos",
+        "¡Ahorra tiempo y dinero! Agenda tu visita por solo $49.900 COP y obtén un 10% de descuento en tu servicio",
+        "Disponible en zonas urbanas de Sogamoso & Duitama, con respuesta rápida y eficiente",
+        "Diagnóstico completo con informe detallado y recomendaciones profesionales para tu hogar"
+      ],
+      "icon": "🔍",
+      "color": "brand-orange",
+      "price": "49.900",
+      "discount": "10%",
+      "locations": ["Sogamoso", "Duitama"]
+    }
+  ]
+}
