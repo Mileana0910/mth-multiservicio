@@ -122,8 +122,8 @@ export function ContactSection() {
                       variant={card.action === "whatsapp" ? "default" : "outline"}
                       className={`w-full font-semibold ${
                         card.action === "whatsapp" 
-                          ? "bg-brand-orange-500 hover:bg-brand-orange-600 text-white" 
-                          : "border-gray-300 text-gray-700 hover:bg-gray-50"
+                          ? "bg-brand-orange-500 hover:bg-brand-orange-600 text-gray-400" 
+                          : "border-gray-400 text-gray-700 hover:bg-gray-800"
                       }`}
                     >
                       {card.action === "whatsapp" && "Chatear ahora"}

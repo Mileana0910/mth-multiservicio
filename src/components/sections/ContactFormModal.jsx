@@ -1,8 +1,9 @@
-// components/sections/ContactFormModal.jsx
+// components/sections/ContactFormModal.jsx (VERSIÓN FINAL CON TUS DATOS)
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, Loader2 } from 'lucide-react';
 import { Button } from '../ui/button';
+import emailjs from '@emailjs/browser';
 
 export function ContactFormModal({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
@@ -15,36 +16,55 @@ export function ContactFormModal({ isOpen, onClose }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState("idle");
 
+  // ✅ TUS CREDENCIALES DE EMAILJS
+  const EMAILJS_CONFIG = {
+    SERVICE_ID: "service_esuv7gq",      // Tu Service ID
+    TEMPLATE_ID: "template_sb5shyt",    // Tu Template ID  
+    PUBLIC_KEY: "P6I3aHqv-4AI45l7p"     // Tu Public Key
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      // Enviar email usando EmailJS
+      const result = await emailjs.send(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service || "Consulta general",
+          message: formData.message,
+          to_email: "multiserviciostotalhogarmth@gmail.com",
+          reply_to: formData.email
+        },
+        EMAILJS_CONFIG.PUBLIC_KEY
+      );
 
-    // Create mailto link with form data
-    const subject = encodeURIComponent(`Solicitud de servicio: ${formData.service || "Consulta general"}`);
-    const body = encodeURIComponent(`
-Nombre: ${formData.name}
-Email: ${formData.email}
-Teléfono: ${formData.phone}
-Servicio: ${formData.service}
-
-Mensaje:
-${formData.message}
-    `);
-
-    window.location.href = `mailto:multiserviciostotalhogarmth@gmail.com?subject=${subject}&body=${body}`;
-
-    setIsSubmitting(false);
-    setSubmitStatus("success");
-
-    // Reset form after 2 seconds
-    setTimeout(() => {
-      setFormData({ name: "", email: "", phone: "", service: "", message: "" });
-      setSubmitStatus("idle");
-      onClose();
-    }, 2000);
+      console.log('Email enviado:', result);
+      
+      if (result.status === 200) {
+        setSubmitStatus("success");
+        // Limpiar formulario
+        setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+        
+        // Cerrar modal después de 3 segundos
+        setTimeout(() => {
+          onClose();
+          setSubmitStatus("idle");
+        }, 3000);
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error('Error enviando email:', error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -189,7 +209,17 @@ ${formData.message}
                     animate={{ opacity: 1, y: 0 }}
                     className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg text-sm"
                   >
-                    ¡Mensaje enviado! Te contactaremos pronto.
+                    ✅ ¡Mensaje enviado con éxito! Te contactaremos en menos de 24 horas.
+                  </motion.div>
+                )}
+
+                {submitStatus === "error" && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg text-sm"
+                  >
+                    ❌ Error al enviar el mensaje. Por favor intenta nuevamente o contáctanos por WhatsApp.
                   </motion.div>
                 )}
 
