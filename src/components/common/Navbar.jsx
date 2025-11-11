@@ -1,20 +1,20 @@
-// components/common/Navbar.jsx (CORREGIDO)
+// components/common/Navbar.jsx (CORRECCIÓN ESPECÍFICA PARA MÓVIL)
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('inicio');
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      // Solo detectar sección activa si estamos en la página principal
       if (location.pathname === '/') {
         const sections = ['inicio', 'servicios', 'nosotros', 'contacto'];
         const scrollPosition = window.scrollY + 100;
@@ -45,21 +45,55 @@ export function Navbar() {
   ];
 
   const handleNavClick = (href, id) => {
+    console.log('Navegando a:', href, 'desde:', location.pathname); // Para debug
+    
     if (href.startsWith('/#')) {
-      // Es un ancla en la página principal
+      const sectionId = href.replace('/#', '');
+      
       if (location.pathname !== '/') {
-        // Si estamos en otra página, navegar a home primero
-        window.location.href = href;
+        // Desde otra página → ir a home
+        navigate('/');
+        // Esperar a que React Router complete la navegación
+        setTimeout(() => {
+          scrollToSection(sectionId);
+        }, 400); 
       } else {
-        const sectionId = href.replace('/#', '');
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
+        // Ya en home → scroll directo
+        scrollToSection(sectionId);
       }
+    } else {
+      // Ruta normal (quienes-somos)
+      navigate(href);
     }
+    
     setActiveSection(id);
-    setIsOpen(false);
+    setIsOpen(false); 
+  };
+
+  const scrollToSection = (sectionId) => {
+    console.log('Buscando sección:', sectionId); // Para debug
+    
+    // Pequeño delay para asegurar que el DOM esté listo
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        console.log('Elemento encontrado:', element); // Para debug
+        
+        const navbar = document.querySelector('nav');
+        const navbarHeight = navbar ? navbar.offsetHeight + 20 : 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      } else {
+        console.log('Elemento NO encontrado:', sectionId);
+        // Fallback: scroll al top si no encuentra la sección
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   return (
@@ -77,7 +111,14 @@ export function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link to="/" className="h-14 w-40 block">
+            <Link 
+              to="/" 
+              className="h-14 w-40 block"
+              onClick={() => {
+                setActiveSection('inicio');
+                setIsOpen(false);
+              }}
+            >
               <img 
                 src="/images/logo-mth.jpeg" 
                 alt="MTH Multiservicios Total Hogar"
@@ -105,6 +146,10 @@ export function Navbar() {
                       className={`relative px-3 py-1 font-semibold transition-colors text-sm ${
                         isActive ? 'text-blue-900' : 'text-gray-700 hover:text-blue-800'
                       }`}
+                      onClick={() => {
+                        setActiveSection(link.id);
+                        setIsOpen(false);
+                      }}
                     >
                       {link.label}
                       {isActive && (
@@ -147,7 +192,6 @@ export function Navbar() {
           </motion.button>
         </div>
 
-        {/* Mobile Navigation */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -169,30 +213,16 @@ export function Navbar() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.1 }}
                     >
-                      {link.href.startsWith('/quienes-somos') ? (
-                        <Link
-                          to={link.href}
-                          className={`block w-full text-left px-4 py-2 font-semibold rounded-lg transition-colors text-sm ${
-                            isActive 
-                              ? 'bg-blue-50 text-blue-900 border-r-4 border-blue-900'
-                              : 'text-gray-700 hover:bg-gray-50 hover:text-blue-800'
-                          }`}
-                          onClick={() => setIsOpen(false)}
-                        >
-                          {link.label}
-                        </Link>
-                      ) : (
-                        <button
-                          onClick={() => handleNavClick(link.href, link.id)}
-                          className={`block w-full text-left px-4 py-2 font-semibold rounded-lg transition-colors text-sm ${
-                            isActive 
-                              ? 'bg-blue-50 text-blue-900 border-r-4 border-blue-900'
-                              : 'text-gray-700 hover:bg-gray-50 hover:text-blue-800'
-                          }`}
-                        >
-                          {link.label}
-                        </button>
-                      )}
+                      <button
+                        onClick={() => handleNavClick(link.href, link.id)}
+                        className={`block w-full text-left px-4 py-3 font-semibold rounded-lg transition-colors text-sm ${
+                          isActive 
+                            ? 'bg-blue-50 text-blue-900 border-r-4 border-blue-900'
+                            : 'text-gray-700 hover:bg-gray-50 hover:text-blue-800'
+                        }`}
+                      >
+                        {link.label}
+                      </button>
                     </motion.div>
                   );
                 })}
