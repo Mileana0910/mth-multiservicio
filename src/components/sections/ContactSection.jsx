@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { Card, CardContent } from '../ui/card';
-import { Button } from '../ui/button';
+import { Button } from '../ui/Button';
 import { MessageCircle, Phone, Mail, Clock, MapPin } from 'lucide-react';
 import { ContactFormModal } from './ContactFormModal';
 
