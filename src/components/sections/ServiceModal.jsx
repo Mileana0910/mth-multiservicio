@@ -1,7 +1,7 @@
 // components/sections/ServiceModal.jsx
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '../ui/dialog';
-import { Button } from '../ui/button';
+import { Button } from '../ui/Button';
 import { MessageCircle, X } from 'lucide-react';
 
 export function ServiceModal({ isOpen, onClose, service }) {
