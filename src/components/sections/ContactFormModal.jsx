@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, Loader2 } from 'lucide-react';
-import { Button } from '../ui/button';
+import { Button } from '../ui/Button';
 import emailjs from '@emailjs/browser';
 
 export function ContactFormModal({ isOpen, onClose }) {
