@@ -220,13 +220,13 @@ export function AboutPage() {
               className="prose prose-lg mx-auto"
             >
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-700 mb-6 leading-relaxed text-justify">
                   <strong>Una historia de éxito es como preparar un pastel:</strong> El resultado depende de la mezcla de muchos ingredientes. 
                   En la vida pasa igual; combinamos aprendizaje, sacrificio, fracasos, resiliencia y muchas ganas de servir, para al final 
                   lograr algo que impacte positivamente a nuestra comunidad pensando en dejar un mejor mañana para nuestros hijos.
                 </p>
 
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-700 mb-6 leading-relaxed text-justify">
                   Mi historia se parece a la de muchos otros emprendedores. Tal vez no me sentí rodeado de lujos o dinero, 
                   pero siempre tuve cerca personas que me guiaron y me ayudaron a encontrar un camino que, en su momento, 
                   no parecía tener ni pies ni cabeza. Hoy, al mirar hacia atrás, comprendo que aquellas situaciones que me parecían 
@@ -234,13 +234,13 @@ export function AboutPage() {
                   avanzar hasta superar ciertas pruebas.
                 </p>
 
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-700 mb-6 leading-relaxed text-justify">
                   Creo firmemente que todos tenemos un propósito en la vida, aunque a veces sea confuso y no entendamos 
                   el “por qué” ni el “para qué” de lo que vivimos. Con el tiempo comprendí que la vida es corta y que, en el fondo, 
                   nuestro verdadero propósito debe ser dejar un legado.
                 </p>
 
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-700 mb-6 leading-relaxed text-justify">
                   Desde muy niño ha sido un apasionado por la construcción. Me emocionaba entrar a las obras, 
                   observar los métodos constructivos e imaginar cómo podría hacerlos más rápidos y eficientes. 
                   Esa pasión me llevó a estudiar en el SENA Industrial de Sogamoso, donde tomé varios cursos que me dieron una sólida 
@@ -249,15 +249,15 @@ export function AboutPage() {
                   camino era otro, así que decidí retirarme para emprender mi primer proyecto: Multiservicios para el Hogar.
                 </p>
 
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-700 mb-6 leading-relaxed text-justify">
                   Fue una etapa de grandes lecciones, y como era de esperarse, fracasé por falta de propósito y experiencia. 
-                  Ese tropiezo me llevó a recorrer diferentes países de Latinoamérica, donde aprendí valiosas lecciones de vida y, s
-                  obre todo, a valorar más mi país. De regreso, fundé otro emprendimiento: “De Tu Casa Ferretería”, una venta de materiales 
+                  Ese tropiezo me llevó a recorrer diferentes países de Latinoamérica, donde aprendí valiosas lecciones de vida y, 
+                  sobre todo, a valorar más mi país. De regreso, fundé otro emprendimiento: “De Tu Casa Ferretería”, una venta de materiales 
                   y servicios. Sin embargo, volvió a fracasar. Aprendí entonces que también hay que aprender a perder, y que entre más rápido
                    acepta una caída, menor será el golpe.
                 </p>
 
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-700 mb-6 leading-relaxed text-justify">
                   Luego llegó la pandemia. Nos encerró a todos, nos cambió la vida, nos arrebató familiares, amigos. 
                   Nos cambió la manera de hacer negocios. Aprendí que debíamos transformar nuestra forma de ver el mundo. 
                   Cuando todo empezaba a estabilizarse, surgió la oportunidad de viajar a Australia, donde viví los últimos dos años. 
@@ -266,7 +266,7 @@ export function AboutPage() {
                    las familias.
                 </p>
 
-                  <p className="text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-gray-700 mb-6 leading-relaxed text-justify">
                   Pero, como dije antes, la vida a veces parece injusta, y aunque hagamos muchos planes, 
                   Dios siempre tiene los suyos para cada uno de nosotros. Hoy, de regreso en mi país con esa experiencia y 
                   un corazón agradecido, nace MTH Multiservicios Total Hogar, un proyecto que combina el talento local, innovación y 
