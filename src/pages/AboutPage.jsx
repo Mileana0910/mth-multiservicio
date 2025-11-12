@@ -209,7 +209,7 @@ export function AboutPage() {
                 Mi historia: una receta de vida y aprendizaje
               </h2>
               <p className="text-gray-600 text-lg">
-                Por Fabián Rodríguez - Fundador de MTH
+                Por Fabian Soraca - Fundador de MTH
               </p>
             </motion.div>
 
