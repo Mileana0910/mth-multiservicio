@@ -31,6 +31,12 @@ const aboutPoints = [
 
 const carouselImages = [
   {
+    src: "/images/avatarHero.jpeg",
+    alt: "Equipo MTH",
+    title: "Dedicación",
+    description: "Trabajo bien hecho"
+  },
+  {
     src: "/images/IMG_9399.JPG",
     alt: "Equipo MTH",
     title: "Dedicación",
@@ -75,7 +81,7 @@ export function AboutSection() {
     
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
-    }, 3000); 
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, [isInView]);
@@ -131,11 +137,12 @@ export function AboutSection() {
                 <Card className="border border-gray-200 hover:border-brand-orange-300 transition-all duration-300 hover:shadow-md group">
                   <CardContent className="p-4"> 
                     <div className="flex items-start gap-3">
-                      <div className={`w-10 h-10 ${point.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}>
+                      {/* ✅ SOLO CAMBIO: Icono con más margen superior */}
+                      <div className={`w-10 h-10 ${point.bgColor} rounded-lg flex items-center justify-center flex-shrink-0 mt-2`}> {/* ✅ Añadido mt-2 */}
                         <point.icon className={`w-5 h-5 ${point.color}`} />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-base font-semibold text-gray-800 mb-1">
+                        <h3 className="text-base font-semibold text-gray-800 mb-1 mt-2">
                           {point.title}
                         </h3>
                         <p className="text-sm text-gray-600 leading-relaxed">

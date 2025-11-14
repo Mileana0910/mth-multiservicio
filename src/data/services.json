@@ -18,13 +18,13 @@
     {
       "avatar": "/images/avatarElectricista.jpeg",
       "title": "Electricidad Residencial",
-      "description": "Reparaciones seguras, instalaciones y pruebas eléctricas certificadas.",
-      "features": ["Reparaciones seguras", "Instalaciones profesionales", "Pruebas certificadas", "Electricistas calificados"],
+      "description": "Reparaciones seguras, instalaciones.",
+      "features": ["Reparaciones seguras", "Instalaciones", "Pruebas "],
       "details": [
         "Solucionamos cortocircuitos, sobrecargas y fallas por calentamiento de terminales, garantizando la seguridad de tu instalación eléctrica",
         "Realizamos cambio de tomas, interruptores, breakers, duchas eléctricas, lámparas empotradas o de sobreponer con acabados profesionales",
         "Verificamos tu red para detectar pérdidas de corriente o fallas a tierra que puedan generar sobrecostos en tu factura",
-        "Electricistas certificados que te brindan seguridad, eficiencia y garantía en cada servicio",
+        "Brindamos seguridad, eficiencia y garantía en cada servicio",
         "Trabajamos con los más altos estándares de seguridad eléctrica para proteger tu hogar"
       ],
       "icon": "⚡",
@@ -96,19 +96,19 @@
       "avatar": "/images/avatarVisitasDiagnostico.jpeg",
       "title": "Visitas y Diagnósticos",
       "description": "Soluciones rápidas y efectivas con cotizaciones claras y sin sorpresas.",
-      "features": ["Diagnóstico profesional", "Cotizaciones transparentes", "Ahorro garantizado", "Técnicos especializados"],
+      "features": ["Diagnóstico profesional", "Cotizaciones", "Ahorro garantizado", "Técnicos especializados"],
       "details": [
         "Nuestros técnicos combinan experiencia y tecnología para detectar y resolver tus problemas con precisión",
         "Conoce los costos y tiempos exactos antes de iniciar tu servicio, sin sorpresas ni costos ocultos",
         "¡Ahorra tiempo y dinero! Agenda tu visita por solo $49.900 COP y obtén un 10% de descuento en tu servicio",
-        "Disponible en zonas urbanas de Sogamoso & Duitama, con respuesta rápida y eficiente",
+        "Disponible en zonas urbanas de Sogamoso & Duitama y sus alrededores, con respuesta rápida y eficiente",
         "Diagnóstico completo con informe detallado y recomendaciones profesionales para tu hogar"
       ],
       "icon": "🔍",
       "color": "brand-orange",
       "price": "49.900",
       "discount": "10%",
-      "locations": ["Sogamoso", "Duitama"]
+      "locations": ["Sogamoso, Duitama", "sus alrededores" ]
     }
   ]
 }

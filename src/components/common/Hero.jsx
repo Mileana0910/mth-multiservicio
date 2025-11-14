@@ -105,17 +105,10 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="relative flex justify-center lg:justify-end"
           >
-            <div className="relative w-full max-w-md">
-              {/* Marco de la imagen */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="relative bg-gradient-to-br from-orange-200 to-orange-100 rounded-2xl p-3 shadow-2xl"
-              >
+            
                 <div className="w-full h-auto rounded-xl overflow-hidden border-2 border-white/20">
                   <img 
-                    src="/images/avatar_Hero-sinfondo.png"
+                    src="/images/IMG_9399.JPG"
                     alt="MTH Multiservicios - Técnico profesional especializado en reparaciones del hogar"
                     className="w-full h-auto object-contain max-h-[380px]"
                     onError={(e) => {
@@ -123,18 +116,6 @@ const Hero = () => {
                     }}
                   />
                 </div>
-                
-                {/* Efecto de brillo sutil */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent via-white/5 to-transparent pointer-events-none"></div>
-              </motion.div>
-              
-              {/* Elementos decorativos */}
-              <div className="absolute -bottom-3 -right-3 w-20 h-20 bg-orange-500/30 rounded-full blur-xl"></div>
-              <div className="absolute -top-3 -left-3 w-16 h-16 bg-orange-300/20 rounded-full blur-lg"></div>
-              
-              {/* Sombra de acento */}
-              <div className="absolute inset-0 rounded-2xl bg-orange-500/20 blur-md -z-10 translate-y-2 translate-x-2"></div>
-            </div>
           </motion.div>
         </div>
       </div>

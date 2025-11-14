@@ -1,4 +1,4 @@
-// components/sections/ContactSection.jsx
+// components/sections/ContactSection.jsx (CON ICONOS BAJADOS)
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
@@ -40,7 +40,7 @@ const contactCards = [
     title: "Horarios y Cobertura",
     content: "Lunes a Sábado: 8:00 AM - 6:00 PM",
     subcontent: "Sogamoso y Duitama, Boyacá",
-    description: "Zonas urbanas y alrededores",
+    description: "Zonas urbanas y sus alrededores",
     action: "info",
   },
 ];
@@ -88,7 +88,7 @@ export function ContactSection() {
           </h2>
           
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Contáctanos hoy y agenda tu servicio. Estamos listos para ayudarte con cualquier necesidad de tu hogar en Sogamoso y Duitama.
+            Contáctanos hoy y agenda tu servicio. Estamos listos para ayudarte con cualquier necesidad de tu hogar en Sogamoso, Duitama y sus alrededores.
           </p>
         </motion.div>
 
@@ -105,7 +105,7 @@ export function ContactSection() {
                   <motion.div
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ type: "spring", stiffness: 300 }}
-                    className="w-14 h-14 bg-brand-orange-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-brand-orange-500 transition-colors relative"
+                    className="w-14 h-14 bg-brand-orange-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-brand-orange-500 transition-colors relative mt-3" 
                   >
                     <card.icon className="w-7 h-7 text-brand-orange-500 group-hover:text-white transition-colors" />
                     {card.iconSecondary && (
@@ -122,8 +122,8 @@ export function ContactSection() {
                       variant={card.action === "whatsapp" ? "default" : "outline"}
                       className={`w-full font-semibold ${
                         card.action === "whatsapp" 
-                          ? "bg-brand-orange-500 hover:bg-brand-orange-600 text-gray-400" 
-                          : "border-gray-400 text-gray-700 hover:bg-gray-800"
+                          ? "bg-brand-orange-500 hover:bg-brand-orange-600 text-white" 
+                          : "border-gray-300 text-gray-700 hover:bg-gray-50"
                       }`}
                     >
                       {card.action === "whatsapp" && "Chatear ahora"}
@@ -136,6 +136,15 @@ export function ContactSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Información adicional */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-12 text-center"
+        >
+        </motion.div>
       </div>
 
       <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />

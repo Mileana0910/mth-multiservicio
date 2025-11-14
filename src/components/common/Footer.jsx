@@ -218,7 +218,7 @@ export function Footer() {
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
                     <span className="text-gray-300 text-sm group-hover:text-white transition-colors">
-                      Sogamoso y Duitama, Boyacá
+                      Sogamoso, Duitama y sus alrededores - Boyacá
                     </span>
                   </motion.div>
 
