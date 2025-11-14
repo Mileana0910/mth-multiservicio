@@ -137,7 +137,7 @@ export function AboutSection() {
                 <Card className="border border-gray-200 hover:border-brand-orange-300 transition-all duration-300 hover:shadow-md group">
                   <CardContent className="p-4"> 
                     <div className="flex items-start gap-3">
-                      {/* ✅ SOLO CAMBIO: Icono con más margen superior */}
+                      
                       <div className={`w-10 h-10 ${point.bgColor} rounded-lg flex items-center justify-center flex-shrink-0 mt-2`}> {/* ✅ Añadido mt-2 */}
                         <point.icon className={`w-5 h-5 ${point.color}`} />
                       </div>
@@ -181,9 +181,9 @@ export function AboutSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="ml-8" 
+              className="ml-0" 
             >
-              <Card className="border border-brand-orange-200 bg-orange-50">
+              <Card className="border border-brand-orange-300 bg-orange-100">
                 <CardContent className="p-4 text-center">
                   <h3 className="text-sm font-semibold text-gray-800 mb-2">
                     ¿Quieres conocernos mejor?
