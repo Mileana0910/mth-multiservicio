@@ -183,7 +183,7 @@ export function AboutSection() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="ml-0" 
             >
-              <Card className="border border-brand-orange-300 bg-orange-200">
+              <Card className="border border-brand-orange-300 bg-orange-100">
                 <CardContent className="p-4 text-center">
                   <h3 className="text-sm font-semibold text-gray-800 mb-2">
                     ¿Quieres conocernos mejor?
