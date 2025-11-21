@@ -1,16 +1,50 @@
-# React + Vite
+# 🏠 MTH Multiservicios Total Hogar - Sitio Web Oficial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18.2.0-blue)
+![Vite](https://img.shields.io/badge/Vite-5.0.0-purple)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3.0-cyan)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-Animaciones-green)
 
-Currently, two official plugins are available:
+Sitio web oficial de **MTH Multiservicios Total Hogar** - empresa especializada en servicios de plomería, electricidad, destapes y reparaciones del hogar en Sogamoso y Duitama, Boyacá.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características Principales
 
-## React Compiler
+### ✨ Diseño Moderno y Responsive
+- **Diseño mobile-first** adaptado a todos los dispositivos
+- **Interfaces intuitivas** con animaciones fluidas usando Framer Motion
+- **Paleta de colores corporativa** (Azul #006DBA y Naranja #DB4715)
+- **Tipografía Roboto** para mejor legibilidad
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Funcionalidades Técnicas
+- **Single Page Application (SPA)** con React Router
+- **Optimización SEO** con meta tags y schema.org
+- **Integración WhatsApp** para contacto inmediato
+- **Carruseles interactivos** para mostrar trabajos
+- **Modales de servicios** con información detallada
+- **Navegación suave** entre secciones
 
-## Expanding the ESLint configuration
+### 📱 Secciones del Sitio
+- **🏠 Inicio** - Hero impactante con llamado a la acción
+- **🛠️ Servicios** - Catálogo completo de servicios con modales informativos
+- **👥 Nosotros** - Sección "Quiénes Somos" con carrusel de equipo
+- **📖 Quiénes Somos** - Página dedicada con historia y valores
+- **📞 Contacto** - Múltiples canales de comunicación
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías Utilizadas
+
+### Frontend
+- **React 18** - Biblioteca principal de UI
+- **Vite** - Build tool y dev server ultrarrápido
+- **React Router DOM** - Navegación entre páginas
+- **Framer Motion** - Animaciones y transiciones
+- **Lucide React** - Iconografía moderna
+
+### Styling
+- **TailwindCSS** - Framework de CSS utility-first
+- **CSS Custom Properties** - Variables CSS para theming
+- **Google Fonts** - Fuente Roboto para mejor legibilidad
+
+### Herramientas de Desarrollo
+- **ESLint** - Linting y calidad de código
+- **PostCSS** - Procesamiento de CSS
+- **Autoprefixer** - Prefixes CSS automáticos
